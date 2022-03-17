@@ -7,28 +7,30 @@
     tools:context=".HomePage">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnClima"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/style_button"
-        android:text="Clima"
+        android:text="@string/clima"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="clickClima"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnNotas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/style_button"
-        android:text="Notas"
+        android:text="@string/notas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnClima"
+        android:onClick="clickNotas"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
